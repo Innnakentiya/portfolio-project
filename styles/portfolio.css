@@ -1,8 +1,78 @@
+:root {
+  --heading-font-family: "Noto Serif Gujarati", serif;
+  --default-font-family: "Roboto", sans-serif;
+  --branding-color-light: #a8d2a0;
+  --branding-color-dark: #4e6949;
+  --branding-color-medium: #82b379;
+  --secondary-color: #f8f7ea;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
 h1 {
-  color: green;
-  /*font-family: "Noto Serif Gujarati", serif;*/
-  font-family: "Titillium Web", sans-serif;
+  color: var(--branding-color-dark);
+  font-family: var(--heading-font-family);
+  /*font-family: "Titillium Web", sans-serif*/
+  font-weight: bold;
+  font-size: 70px;
 }
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--default-font-family);
+  color: black;
+}
+nav li {
+  letter-spacing: 2px;
+  margin-left: 25px;
+  font-weight: bold;
+}
+.navbar-brand {
+  font-weight: bold;
+  font-family: var(--heading-font-family);
+}
+
+.hero p {
+  font-size: 35px;
+  font-weight: 500;
+  font-family: var(--default-font-family);
+  opacity: 0.9;
+}
+.hero {
+  text-align: left;
+  margin: 100px 20px;
+  padding: 60px;
+}
+.bg-lightgreen {
+  background-color: var(--branding-color-light);
+}
+img {
+  border-radius: 10px 100px / 120px;
+  box-shadow: var(--branding-color-light) 3px 5px 2px 5px;
+}
+
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid var(--branding-color-light);
+  margin: 0 auto;
+  width: 0;
+  animation: typing 1.7s steps(50, end) forwards, blink-caret 0.75s infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.btn-get-started {
+  background-color: var(--branding-color-light);
+  color: black;
+  text-transform: uppercase;
+  border-radius: 25px;
+  padding: 15px 20px;
+}
+.btn-get-started:hover {
+  background-color: var(--branding-color-medium);
+  transition: 0.5s;
 }
