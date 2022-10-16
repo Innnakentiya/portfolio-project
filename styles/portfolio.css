@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--secondary-color);
+  font-family: var(--default-font-family);
 }
 h1 {
   color: var(--branding-color-dark);
@@ -18,13 +19,31 @@ h1 {
   font-size: 70px;
 }
 h2 {
-  font-family: var(--default-font-family);
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  font-size: 38px;
+  color: var(--branding-color-dark);
+}
+h3 {
+  font-family: var(--heading-font-family);
   color: black;
+  opacity: 0.8;
+  font-weight: 700;
 }
 nav li {
   letter-spacing: 2px;
   margin-left: 25px;
   font-weight: bold;
+}
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
+img {
+  box-shadow: 2px 3px 5px var(--branding-color-medium);
+  border-radius: 21px;
+  max-width: 80%;
 }
 .navbar-brand {
   font-weight: bold;
@@ -39,13 +58,12 @@ nav li {
 }
 .hero {
   text-align: left;
-  margin: 100px 20px;
-  padding: 60px;
+  padding: 100px 20px;
 }
 .bg-lightgreen {
   background-color: var(--branding-color-light);
 }
-img {
+.hero img {
   border-radius: 10px 100px / 120px;
   box-shadow: var(--branding-color-light) 3px 5px 2px 5px;
 }
@@ -75,4 +93,28 @@ img {
 .btn-get-started:hover {
   background-color: var(--branding-color-medium);
   transition: 0.5s;
+}
+.btn-projects {
+  background-color: var(--secondary-color);
+  color: var(--branding-color-medium);
+  text-transform: uppercase;
+  border: solid var(--branding-color-medium);
+  border-radius: 25px;
+  padding: 15px 20px;
+}
+.btn-projects:hover {
+  color: var(--branding-color-dark);
+  border: solid var(--branding-color-dark);
+}
+.project-description {
+  padding: 120px 60px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 50px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
