@@ -88,7 +88,7 @@ img {
   box-shadow: 3px 5px 10px var(--branding-color-dark);
 }
 .fa-arrow-down {
-  color: var(--branding-color-medium);
+  color: var(--branding-color-dark);
 }
 .fa-reply-all {
   color: var(--branding-color-dark);
