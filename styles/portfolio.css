@@ -83,6 +83,18 @@ img:hover {
 .content {
   margin: 30px;
 }
+.content a {
+  color: var(--branding-color-dark);
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+.location {
+  color: var(--branding-color-dark);
+  letter-spacing: 0.2rem;
+}
+.contact-description {
+  text-align: center;
+}
 .hero img {
   border-radius: 10px 100px / 120px;
   box-shadow: var(--branding-color-light) 3px 5px 2px 5px;
