@@ -40,11 +40,9 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
-img {
-  box-shadow: 2px 3px 5px var(--branding-color-medium);
-  border-radius: 21px;
-  max-width: 100%;
-}
+/*footer p {
+  margin-top: 80px;
+}*/
 img:hover {
   box-shadow: 3px 5px 10px var(--branding-color-dark);
 }
@@ -83,10 +81,31 @@ img:hover {
 .content {
   margin: 30px;
 }
-.content a {
+.content-contacts {
+  border: solid 3px var(--branding-color-light);
+  border-radius: 10px;
+  padding: 100px 20px;
+
+  background: linear-gradient(
+    109.6deg,
+    rgb(251, 250, 225) 11.2%,
+    rgb(206, 240, 185) 47.5%,
+    rgb(100, 163, 111) 100.2%
+  );
+}
+.content-contacts:hover {
+  border: solid 3px var(--branding-color-medium);
+}
+.content-contacts a {
   color: var(--branding-color-dark);
   text-decoration: none;
   letter-spacing: 0.2rem;
+}
+.source-link {
+  color: var(--branding-color-medium);
+}
+.source-link:hover {
+  color: var(--branding-color-dark);
 }
 .location {
   color: var(--branding-color-dark);
@@ -109,6 +128,9 @@ img:hover {
   /* margin: 40px;*/
 }
 .project-image {
+  box-shadow: 2px 3px 5px var(--branding-color-medium);
+  border-radius: 21px;
+  max-width: 100%;
   padding: 10px;
 }
 .main:hover {
@@ -123,7 +145,12 @@ img:hover {
 .fa-right-long {
   color: var(--branding-color-dark);
 }
-
+.fa-code {
+  color: var(--branding-color-dark);
+}
+.icon-code-simple {
+  color: var(--branding-color-dark);
+}
 .typewriter h1 {
   overflow: hidden;
   border-right: 0.15em solid var(--branding-color-light);
@@ -179,7 +206,7 @@ img:hover {
     margin: 24px 24px;
   }
   .content-container {
-    padding: 50px 20px;
+    padding: 70px 20px;
   }
 }
 @media (max-width: 1200px) {
